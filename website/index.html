@@ -59,7 +59,7 @@
 			<div id="logo-group">
 
 				<!-- PLACE YOUR LOGO HERE -->
-				<span id="logo"> <img src="/static/img/lcqoIj9.png" alt="NOMP"> </span>
+			<!--	<span id="logo"> <img src="/static/img/lcqoIj9.png" alt="NOMP"> </span> -->
 				<!-- END LOGO PLACEHOLDER -->
 			</div>
 
@@ -81,19 +81,21 @@
 		<aside id="left-panel">
 			<nav>
 				<ul>
+                                        <li class="{{? it.selected === 'home' }}active{{?}}">
+                                                <a href="/"><i class="fa fa-home"></i> <span class="menu-item-parent">Home</span></a>
+                                        </li>
 					<li class="{{? it.selected === 'getting_started' }}active{{?}}">
-						<a href="/getting_started" title="Dashboard"><i class="fa fa-rocket"></i> <span class="menu-item-parent">Getting Started</span></a>
+						<a href="/getting_started" title="Dashboard"><i class="fa fa-rocket"></i> <span class="menu-item-parent">Available Coins</span></a>
 					</li>
 					<li class="{{? it.selected === 'stats' }}active{{?}}">
 						<a href="/stats"><i class="fa fa-bar-chart-o"></i> <span class="menu-item-parent">Statistics</span></a>
 					</li>
 					<li class="{{? it.selected === 'workers' }}active{{?}}">
-						<a href="/workers"><i class="fa fa-cogs"></i> <span class="menu-item-parent">Workers</span></a>4
+						<a href="/workers"><i class="fa fa-cogs"></i> <span class="menu-item-parent">Workers</span></a>
 					</li>
 					<li class="{{? it.selected === 'api' }}active{{?}}>
 						<a href="/api"><i class="fa fa-code"></i> <span class="menu-item-parent">API</span></a>
 					</li>
-					
 				</ul>
 			</nav>
 			<span class="minifyme" data-action="minifyMenu"> 
@@ -108,7 +110,7 @@
 
 			<div id="ribbon">
 				<ol class="breadcrumb">
-					<li>NOMP</li><li>{{=it.selected}}</li>
+					<li>CoinHa$h Mining Pools</li><li>{{=it.selected}}</li>
 				</ol>
 			</div>
 			<!-- END RIBBON -->
@@ -126,7 +128,7 @@
 		<div class="page-footer">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
-					<span class="txt-color-white">Unified Node Open Mining Portal<span class="hidden-xs"> - Forked and Improved from NOMP By AhmedBodi</span> © 2014-2015</span>
+					<span class="txt-color-white">CoinHa$h Mining Portal<br><span class="hidden-xs">Forked and Improved from NOMP by CoinHa$h.me</span> © 2014-2015</span>
 				</div>
 			</div>
 		</div>
